@@ -1,6 +1,6 @@
 # Sistema Médico de Agendamento
 
-Este projeto é uma aplicação web simples para gerenciamento de agendamentos médicos, desenvolvida com **Python** e **Flask** **MySQL**.
+Este projeto é uma aplicação web simples para gerenciamento de agendamentos médicos, desenvolvida com **Python**, **Flask** e **MySQL**.
 
 ## Funcionalidades principais
 
@@ -90,7 +90,6 @@ cd portifolio-dados/sistema-medico-agendamento
 Importe o script SQL disponível acima no MySQL Workbench ou em outro cliente MySQL para criar as tabelas necessárias.
 
 Configure a conexão com o banco de dados no arquivo db.py ajustando as credenciais conforme seu ambiente local:
-
 db.py
 import mysql.connector
 
@@ -101,8 +100,10 @@ def conectar():
         password="sua_senha_aqui",
         database="sistema_medico_agendamentos"
     )
-4. Vá na pasta app.py e coloque o projeto para rodar
+4. Vá na pasta app.py e coloque o projeto para rodar!
 bash
 py app.py
-clique no link gerado 
+clique no link gerado e faça seus testes.
+
+## OBRIGADA POR VISITAR MEU PROJETO
 

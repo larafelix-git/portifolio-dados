@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Agendamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Novo Agendamento</h1>
+    <form method="POST" action="{{ url_for('novo_agendamento') }}">
+        <label for="descricao">Descrição do Alerta:</label>
+        <textarea name="descricao" required></textarea>
+
+        <label for="data">Data:</label>
+        <input type="date" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" required>
+
+        <label for="tutor">Tutor Responsável:</label>
+        <input type="text" name="tutor" required>
+
+        <label for="medicamento">Medicamento:</label>
+        <input type="text" name="medicamento">
+
+        <label for="clinica">Clínica:</label>
+        <input type="text" name="clinica">
+
+        <label for="medico">Médico:</label>
+        <input type="text" name="medico">
+
+        <label for="crm">CRM do Médico:</label>
+        <input type="text" name="crm">
+
+        <label for="contato_medico">Contato do Médico:</label>
+        <input type="text" name="contato_medico">
+
+        <label for="contato1">Contato de Emergência 1:</label>
+        <input type="text" name="contato1">
+
+        <label for="contato2">Contato de Emergência 2:</label>
+        <input type="text" name="contato2">
+
+        <button type="submit">Salvar Agendamento</button>
+    </form>
+</body>
+</html>

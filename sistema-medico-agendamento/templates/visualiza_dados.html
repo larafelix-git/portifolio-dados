@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualização de Dados</title>
+</head>
+<body>
+    <h1>Visualização de Agendamentos</h1>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Tutor</th>
+                <th>Médico</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for agendamento in agendamentos %}
+            <tr>
+                <td>{{ agendamento.id }}</td>
+                <td>{{ agendamento.descricao_alerta }}</td>
+                <td>{{ agendamento.data_agendamento }}</td>
+                <td>{{ agendamento.hora_agendamento }}</td>
+                <td>{{ agendamento.tutor_nome }}</td>
+                <td>{{ agendamento.medico_nome }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="6">Nenhum agendamento encontrado.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('index') }}">Voltar</a>
+</body>
+</html>

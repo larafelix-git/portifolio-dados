@@ -90,6 +90,7 @@ cd portifolio-dados/sistema-medico-agendamento
 Importe o script SQL disponível acima no MySQL Workbench ou em outro cliente MySQL para criar as tabelas necessárias.
 
 Configure a conexão com o banco de dados no arquivo db.py ajustando as credenciais conforme seu ambiente local:
+
 db.py
 import mysql.connector
 
@@ -100,6 +101,7 @@ def conectar():
         password="sua_senha_aqui",
         database="sistema_medico_agendamentos"
     )
+    
 4. Vá na pasta app.py e coloque o projeto para rodar!
 bash
 py app.py
